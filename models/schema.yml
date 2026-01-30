@@ -4,14 +4,7 @@ sources:
   - name: raw
     database: unique-atom-475008-g2
     schema: gz_raw_data_2
-    loader: bigquery
-    freshness: 
-      error_after:
-        count: 24
-        period: hour
-      warn_after:
-        count: 12
-        period: hour
+    loader: bigquery 
     tables:
       - name: product 
         identifier: raw_gz_product 
