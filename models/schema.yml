@@ -24,9 +24,9 @@ sources:
         identifier: raw_gz_sales
         description: sales of Greenweez / we have one row per product_id found in each orders_id
         # Freshness testing - make sure to fill in the ...
-        #loaded_at_field: date_date
-        #freshness:
-          #warn_after: { count: 90, period: day }
+        loaded_at_field: date_date
+        freshness:
+          warn_after: { count: 90, period: day }
         columns:
            - name: date_date
              description: date of purchase
