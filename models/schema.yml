@@ -2,7 +2,6 @@ version: 2
 
 sources:
   - name: raw
-    database: unique-atom-475008-g2
     schema: gz_raw_data_2
     loader: bigquery 
     tables:
