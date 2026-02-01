@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw_data_circle
+    loader: bigquery 
+    tables:
+      - name: cc_parcel_product
+        identifier: raw_cc_parcel_product
+      - name: cc_parcel
+        identifier: raw_data_circle
