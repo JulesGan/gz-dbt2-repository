@@ -20,7 +20,7 @@ sources:
         identifier: raw_gz_sales
         description: sales of Greenweez / we have one row per product_id found in each orders_id
         # Freshness testing - make sure to fill in the ...
-        loaded_at_field: date_date
+        loaded_at_field: CAST(date_date as timestamp)
         freshness:
          warn_after: {count: 90, period : day}
         columns:
